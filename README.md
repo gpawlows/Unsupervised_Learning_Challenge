@@ -30,6 +30,7 @@ Here is a hypothetical problem set that allows an analyst to dig into unsupervis
 
 * Next, I ran my PCA dataset through a t-SNE model and visually inspected the results, looking for clusters. As can be observed in my Jupyter Notebook file, I did in fact find clusters of crypto using the t-SNE model, suggesting that crypto assets could be classifed.  
 
+![t-sne clusters](Images/clusters)
 ### Cluster Analysis with k-Means
 
 Using further clustering analysis with the k-Means technique, I was able to determine that the optimal amount of clusters to classify the crypto data into is 4.  After that, there is diminishing returns on further clustering based on the elbow curve I generated.  
