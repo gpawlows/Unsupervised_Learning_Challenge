@@ -30,7 +30,7 @@ Here is a hypothetical problem set that allows an analyst to dig into unsupervis
 
 * Next, I ran my PCA dataset through a t-SNE model and visually inspected the results, looking for clusters. As can be observed in my Jupyter Notebook file, I did in fact find clusters of crypto using the t-SNE model, suggesting that crypto assets could be classifed.  
 
-![t-sne clusters](Images\clusters.PNG)
+![t-sne clusters](Images/clusters.PNG)
 
 ### Cluster Analysis with k-Means
 
