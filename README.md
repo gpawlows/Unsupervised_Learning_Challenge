@@ -26,27 +26,15 @@ Here is a hypothetical problem set that allows an analyst to dig into unsupervis
 
 ### Dimensionality Reduction
 
-* Creating dummy variables dramatically increased the number of features in the dataset. Performing dimensionality reduction with PCA can bring the number of features back down, reducing the complexity of the model. Rather than specify the number of principal components, I defined the level of variance I wanted described by the model, .90, when setting the parameters for the PCA. 
+* Creating dummy variables dramatically increased the number of features in the dataset. Performing dimensionality reduction with PCA can bring the number of features back down, reducing the complexity of the model. Rather than specify the number of principal components, I defined the level of variance I wanted described by the model, .90, when setting the parameters for the PCA. Performing PCA reduced my feature set from 109 to 84 features.  
 
-* Next, further reduce the dataset dimensions with t-SNE and visually inspect the results. In order to accomplish this task, run t-SNE on the principal components: the output of the PCA transformation. Then create a scatter plot of the t-SNE output. Observe whether there are distinct clusters or not.
+* Next, I ran my PCA dataset through a t-SNE model and visually inspected the results, looking for clusters. As can be observed in my Jupyter Notebook file, I did in fact find clusters of crypto using the t-SNE model, suggesting that crypto assets could be classifed.  
 
 ### Cluster Analysis with k-Means
 
-* Create an elbow plot to identify the best number of clusters. Use a for-loop to determine the inertia for each `k` between 1 through 10. Determine, if possible, where the elbow of the plot is, and at which value of `k` it appears.
+Using further clustering analysis with the k-Means technique, I was able to determine that the optimal amount of clusters to classify the crypto data into is 4.  After that, there is diminishing returns on further clustering based on the elbow curve I generated.  
 
-### Recommendation
 
-* Based on your findings, make a brief (1-2 sentences) recommendation to your clients. Can the cryptocurrencies be clustered together? If so, into how many clusters? 
-
-## Rubric
-
-[Unit 20 - Unsupervised Machine Learning Homework Rubric - Cryptocurrency Clusters](https://docs.google.com/document/d/1zhiC8-PtfMknDxYHagsTukryQAJSdXFRWa-aK3W28Vg/edit?usp=sharing)
-
-- - -
-
-## References
-
-Crypto Coin Comparison Ltd. (2020) Coin market capitalization lists of crypto currencies and prices. Retrieved from [https://www.cryptocompare.com/coins/list/all/USD/1](https://www.cryptocompare.com/coins/list/all/USD/1)
 
 - - -
 
